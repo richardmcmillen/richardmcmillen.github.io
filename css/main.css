@@ -63,6 +63,7 @@ header {
   position: absolute;
   top: 10%;
   left: 10%;
+  width: 80%;
   color: #F7F7F7;
 }
 
@@ -89,31 +90,48 @@ a:hover {
   margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.description {
+  width: 70%;
+}
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 480px) {
+  .name_heading {
+    font-size: 3em;
+  }
 
+  .description {
+    width: 100%;
+  }
 }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+@media only screen and (min-width: 480px) {
+  .name_heading {
+    font-size: 3em;
+  }
 
+  .description {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .name_heading {
+    font-size: 4em;
+  }
+
+  .description {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .name_heading {
+    font-size: 6em;
+  }
 }
 
 /* ==========================================================================
